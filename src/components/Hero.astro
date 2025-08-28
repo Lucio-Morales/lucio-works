@@ -1,0 +1,73 @@
+---
+// src/components/Hero.astro
+// Importamos la directiva de Tailwind para sus clases de utilidad
+
+---
+
+<section class="relative w-full h-screen flex flex-col justify-center items-center  overflow-hidden">
+  
+  <div class="absolute inset-0 z-0 opacity-40">
+    <div class="w-full h-full bg-gradient-to-br animate-pulse-slow"></div>
+  </div>
+
+  <div class="relative z-10 text-center px-4">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-fade-in-down">
+      Bienvenido a mi sitio web
+    </h1>
+    <p class="text-lg sm:text-xl md:text-2xl mb-8 opacity-0 animate-fade-in-down" style="animation-delay: 0.5s;">
+      Explora lo que podemos crear juntos.
+    </p>
+    <a href="#about" class=" text-light-gray font-semibold py-3 px-6 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105 animate-fade-in-up border-2 border-orange-500" style="animation-delay: 1s;">
+      Descubre más
+    </a>
+  </div>
+</section>
+
+<style>
+  @keyframes pulse-slow {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 8s infinite ease-in-out;
+  }
+
+  /* Animación para textos (arriba a abajo) */
+  @keyframes fade-in-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-down {
+    animation: fade-in-down 1s forwards;
+    opacity: 0;
+  }
+
+  /* Animación para el botón (abajo a arriba) */
+  @keyframes fade-in-up {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in-up {
+    animation: fade-in-up 1s forwards;
+    opacity: 0;
+  }
+</style>
