@@ -1,19 +1,11 @@
 ---
-const initialPageTitle = 'Pagina de inicio';
+
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{initialPageTitle}</title>
-  </head>
-  <body>
-    <a href="/">Inicio</a>
-    <a href="/about/">Sobre mi</a>
-    <a href="/blog/">Blog</a>
-    <h1>Mi sitio Astro</h1>
-  </body>
-</html>
+<Layout>
+	<div >
+		<h1 class="text-6xl">Holu</h1>
+	</div>
+</Layout>

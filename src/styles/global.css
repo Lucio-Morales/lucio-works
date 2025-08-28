@@ -1,0 +1,17 @@
+/* src/styles/globals.css */
+@import 'tailwindcss';
+
+/* Definición de la paleta de colores para el TEMA OSCURO */
+@theme {
+  --color-background: hsl(222, 12%, 8%);
+  --color-light-gray: hsl(220, 25%, 90%);
+  --color-purple: hsl(257, 60%, 44%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/* Estilos globales */
+body {
+  font-family: var(--font-heading), sans-serif;
+  color: var(--color-light-gray); /* Color de texto por defecto para el tema oscuro */
+  background-color: var(--color-background);
+}
