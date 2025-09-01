@@ -3,7 +3,9 @@
 
 /* Definición de la paleta de colores para el TEMA OSCURO */
 @theme {
-  --color-background: hsl(222, 12%, 8%);
+  --color-Bg-light: rgb(247, 240, 230);
+  --color-Accent: rgb(179, 159, 154);
+  --color-Black-text: rgb(18, 14, 13);
   --color-light-gray: hsl(220, 25%, 90%);
   --color-purple: hsl(257, 60%, 44%);
   --color-white: hsl(0, 0%, 100%);
@@ -12,6 +14,6 @@
 /* Estilos globales */
 body {
   font-family: var(--font-heading), sans-serif;
-  color: var(--color-light-gray); /* Color de texto por defecto para el tema oscuro */
-  background-color: var(--color-background);
+  color: var(--color-Black-text); /* Color de texto por defecto para el tema claro */
+  /* background-color: var(--color-Bg-light); Color bg tema claro  */
 }
