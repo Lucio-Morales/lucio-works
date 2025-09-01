@@ -14,10 +14,10 @@ import Header from "../components/Header.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Lucio works</title>
 	</head>
-	<body class="p-6 relative ">
-		<div class="border border-Accent w-24 absolute min-h-screen"></div>
+	<body class="p-6 relative">
+		<div class="border border-Accent w-22 absolute h-full"></div>
 		<Header />
-		 <main class="min-h-screen ">
+		<main class="h-full">
 			<slot />
 		</main>
 	</body>
@@ -30,7 +30,7 @@ import Header from "../components/Header.astro";
 		background-color:rgb(247, 240, 230);
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		height: 100%; 
 		box-sizing: border-box;
 	}
 </style>
